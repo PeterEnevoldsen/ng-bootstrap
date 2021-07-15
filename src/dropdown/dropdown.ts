@@ -314,6 +314,8 @@ export class NgbDropdown implements AfterContentInit, OnDestroy {
   }
 
   onKeyDown(event: KeyboardEvent) {
+    return;
+
     // tslint:disable-next-line:deprecation
     const key = event.which;
     const itemElements = this._getMenuElements();
